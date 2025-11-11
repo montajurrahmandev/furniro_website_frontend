@@ -1,0 +1,13 @@
+  @media (max-width: 768px) {
+    .comparison-table {
+      grid-template-columns: 1fr;
+    }
+
+    .section-title {
+      grid-column: span 1;
+    }
+
+    .comparison-cell:nth-child(3n+1) {
+      background: #f7f7f7;
+    }
+  }
