@@ -42,7 +42,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="shop.html">Shop</a>
@@ -59,19 +59,23 @@
                 <a href="user.html"><i class="fa-regular fa-user"></i></a>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
-                <a href=""
+                <span role="button" onclick="handleShowcartSidebar()"
                   ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                ></span>
               </div>
             </div>
           </nav>
 
-          <div class="cart_sidebar visually-hidden">
+          <div id="cart-sidebar" class="cart_sidebar visually-hidden">
             <div
               class="heading d-flex align-items-center justify-content-between"
             >
               <h3>Shopping Cart</h3>
-              <i class="fa-solid fa-xmark"></i>
+              <i
+                onclick="handleShowcartSidebar()"
+                role="button"
+                class="fa-solid fa-xmark poin"
+              ></i>
             </div>
             <hr class="w-75 my-4" />
             <div class="product_part">
@@ -132,6 +136,15 @@
               <a href="#">Checkout</a>
               <a href="#">Comparison</a>
             </div>
+            <div
+              role="button"
+              class="full-page d-flex align-items-center column-gap-2 mt-4 p-2"
+            >
+              <a href="cart.html">
+                <i class="fa-solid fa-share"></i>
+                <span>View Full Page</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -142,73 +155,213 @@
       <div class="bannerCommon">
         <div class="container text-center">
           <img src="img/bannerall_Logo.png" alt="Logo" />
-          <h2>Cart</h2>
+          <h2>Checkout</h2>
           <p>
             Home <span><i class="fa-solid fa-greater-than"></i></span>
-            <span>Cart</span>
+            <span>Checkout</span>
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Cart-Part Start  -->
-    <section>
+    <section class="checkout-section pt-5 mt-5">
       <div class="container">
-        <div class="cart-part d-flex justify-content-between column-gap-5 pt-5 mt-3">
-          <div class="cart-content w-75">
-            <div class="menu">
-              <ul>
-                <li></li>
-                <li>Product</li>
-                <li>Price</li>
-                <li>Quantity</li>
-                <li>Subtotal</li>
-                <li class="delete"></li>
-              </ul>
-            </div>
-            <div class="product">
-              <div>
-                <ul>
-                  <li>
-                    <img
-                      src="img/Group 146.png"
-                      alt="Group 146.png"
-                      class="img-fluid"
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="billing-details">
+              <h3>Billing details</h3>
+              <form>
+                <div class="form-row d-flex align-items-center column-gap-5">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="First Name"
+                      required
                     />
-                  </li>
-                  <li>Asgaard sofa</li>
-                  <li>Rs. 250,000.00</li>
-                  <li>
-                    <input type="number" value="1" min="1" class="quantity" />
-                  </li>
-                  <li class="price">Rs. 250,000.00</li>
-                  <li class="delete"><i class="fa-solid fa-trash"></i></li>
-                </ul>
-              </div>          
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Company Name (Optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="companyName"
+                    placeholder="Company Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="country">Country / Region</label>
+                  <select id="country" class="form-control" required>
+                    <option selected>Sri Lanka</option>
+                    <!-- Other countries can be added here -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="address">Street Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Street Address"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="townCity">Town / City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="townCity"
+                    placeholder="Town / City"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="province">Province</label>
+                  <select id="province" class="form-control">
+                    <option selected>Western Province</option>
+                    <!-- Other provinces can be added here -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="zipCode">ZIP Code</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipCode"
+                    placeholder="ZIP Code"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="additionalInfo">Additional Information</label>
+                  <textarea
+                    class="form-control"
+                    id="additionalInfo"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="cart-card w-25 text-center">
-            <h4>Cart Totals</h4>
-            <p
-              class="d-flex align-items-center column-gap-5 justify-content-center pt-5 mt-5"
-            >
-              Subtotal <span class="subtotal">Rs. 250,000.00</span>
-            </p>
+          <div class="col-lg-5">
+            <div class="form-container order-summary">
+              <h3>Order Summary</h3>
+              <div class="d-flex align-items-center justify-content-between">
+                <strong>Product</strong>
+                <strong>Subtotal</strong>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between py-3"
+              >
+                <span class="product d-flex align-items-center column-gap-2"
+                  >Asgard sofa <i class="fa-solid fa-xmark"></i
+                  ><span class="quantity">1</span></span
+                >
+                <span class="price">Rs. 250,000.00</span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between py-4"
+              >
+                <span>Subtotal</span>
+                <span class="price">Rs. 250,000.00</span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between py-4"
+              >
+                <span>Total</span>
+                <span class="total-price">Rs. 250,000.00</span>
+              </div>
 
-            <p
-              class="d-flex align-items-center column-gap-5 justify-content-center pt-4"
-            >
-              Total <span class="total">Rs. 250,000.00</span>
-            </p>
+              <hr class="container m-auto" />
 
-            <a href="checkout.html"><button class="">Check Out</button></a>
+              <div class="payment-method mt-5">
+                <h3>Payment Method</h3>
+                <br />
+                <div class="pt-3">
+                  <div class="d-flex align-items-center column-gap-3">
+                    <input
+                      type="radio"
+                      id="directBank"
+                      name="paymentMethod"
+                      value="directBank"
+                    />
+                    <label for="directBank">Direct Bank Transfer</label>
+                  </div>
+                  <p>
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order will not
+                    be shipped until the funds have cleared in our account.
+                  </p>
+                </div>
+                <div class="pt-3">
+                  <div class="d-flex align-items-center column-gap-3">
+                    <input
+                      type="radio"
+                      id="cashOnDelivery"
+                      name="paymentMethod"
+                      value="cashOnDelivery"
+                    />
+                    <label for="cashOnDelivery">Cash On Delivery</label>
+                  </div>
+                  <p class="visually-hidden">
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order will not
+                    be shipped until the funds have cleared in our account.
+                  </p>
+                </div>
+                <p class="info ">
+                  Your personal data will be used to support your experience
+                  throughout this website, to manage access to your account, and
+                  for other purposes described in our <span>privacy policy.</span>
+                </p>
+              </div>
+  <div class="d-flex justify-content-center">
+                <button type="submit">
+                Place order
+              </button>
+  </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Facilities Part Start  -->
-    <section class="feature-bar-section ">
+    <section class="feature-bar-section mt-5 pt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -262,7 +415,7 @@
       </div>
     </section>
 
-    <hr class="container m-auto" />
+    <hr />
 
     <!-- Footer-Part Start  -->
     <footer id="footerPart">
@@ -282,7 +435,7 @@
               <div class="menu">
                 <h4>Links</h4>
                 <ul>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Home</a></li>
                   <li><a href="shop.html">Shop</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html" class="pb-0">Contact</a></li>
