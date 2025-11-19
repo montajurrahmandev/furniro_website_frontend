@@ -59,17 +59,21 @@
                 <a href="user.html"><i class="fa-regular fa-user"></i></a>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span role="button" id="btn"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></span>
               </div>
             </div>
           </nav>
 
-          <div class="cart_sidebar visually-hidden">
+          <div id="cart-sidebar" class="cart_sidebar">
             <div
               class="heading d-flex align-items-center justify-content-between"
             >
               <h3>Shopping Cart</h3>
-              <i class="fa-solid fa-xmark"></i>
+              <span id="btnC" role="button"
+                ><i class="fa-solid fa-xmark poin"></i
+              ></span>
             </div>
             <hr class="w-75 my-4" />
             <div class="product_part">
@@ -129,6 +133,15 @@
               <a href="#">Cart</a>
               <a href="#">Checkout</a>
               <a href="#">Comparison</a>
+            </div>
+            <div
+              role="button"
+              class="full-page d-flex align-items-center column-gap-2 mt-4 p-2"
+            >
+              <a href="cart.html">
+                <i class="fa-solid fa-share"></i>
+                <span>View Full Page</span>
+              </a>
             </div>
           </div>
         </div>

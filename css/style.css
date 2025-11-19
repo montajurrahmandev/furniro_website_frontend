@@ -149,6 +149,20 @@ p {
   width: 210px;
   border-radius: 10px;
 }
+#product .content .overly .cart button {
+  padding: 10px 0;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  color: #b88e2f;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  border: none;
+  border-radius: 10px;
+}
 #product .content .overly .icons {
   display: flex;
   justify-content: space-between;
@@ -258,7 +272,9 @@ p {
   top: 0;
   right: 0;
   z-index: 1;
+  display: none;
 }
+
 
 .cart_sidebar .heading h3 {
   font-size: 24px;

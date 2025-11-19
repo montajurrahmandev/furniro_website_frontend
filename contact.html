@@ -22,46 +22,129 @@
       <!-- Header-Part Start  -->
     <header id="headerpart" class="bg-white">
       <div class="container">
-        <nav class="navbar navbar-expand-lg align-items-center">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logo.png" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="shop.html">Shop</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+        <div class="">
+          <nav class="navbar navbar-expand-lg align-items-center">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo.png" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="icons">
+                <a href="user.html"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <span role="button" id="btn"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></span>
+              </div>
             </div>
-            <div class="icons">
-              <a href="user.html"><i class="fa-regular fa-user"></i></a>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href="#"><i class="fa-regular fa-heart"></i></a>
-              <a href="cart_sidebar.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </nav>
+
+          <div id="cart-sidebar" class="cart_sidebar">
+            <div
+              class="heading d-flex align-items-center justify-content-between"
+            >
+              <h3>Shopping Cart</h3>
+              <span id="btnC" role="button"
+                ><i class="fa-solid fa-xmark poin"></i
+              ></span>
+            </div>
+            <hr class="w-75 my-4" />
+            <div class="product_part">
+              <div
+                class="product d-flex align-items-center justify-content-between py-2"
+              >
+                <div class="img">
+                  <img
+                    src="img/Group 146.png"
+                    alt="Group 146.png"
+                    class="w-100 img-fluid"
+                  />
+                </div>
+                <div class="details">
+                  <h3 class="title">Asgaard sofa</h3>
+                  <div class="d-flex align-items-center column-gap-3 pt-2">
+                    <span class="quantity">1</span>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span class="price">Rs. 250,000.00</span>
+                  </div>
+                </div>
+                <div class="cross">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div
+                class="product d-flex align-items-center justify-content-between py-2"
+              >
+                <div class="img">
+                  <img
+                    src="img/Group 146 (1).png"
+                    alt="Group 146.png"
+                    class="w-100 img-fluid"
+                  />
+                </div>
+                <div class="details">
+                  <h3 class="title">Asgaard sofa</h3>
+                  <div class="d-flex align-items-center column-gap-3 pt-2">
+                    <span class="quantity">1</span>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span class="price">Rs. 250,000.00</span>
+                  </div>
+                </div>
+                <div class="cross">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <label>Subtotal</label>
+              <span>Rs. 520,000.00</span>
+            </div>
+            <hr class="w-100 my-4" />
+            <div
+              class="button w-100 d-flex align-items-center justify-content-between pt-2"
+            >
+              <a href="#">Cart</a>
+              <a href="#">Checkout</a>
+              <a href="#">Comparison</a>
+            </div>
+            <div
+              role="button"
+              class="full-page d-flex align-items-center column-gap-2 mt-4 p-2"
+            >
+              <a href="cart.html">
+                <i class="fa-solid fa-share"></i>
+                <span>View Full Page</span>
+              </a>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 

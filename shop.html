@@ -18,56 +18,96 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- CSS links End -->
   </head>
-<body>
-      <!-- Header-Part Start  -->
+  <body>
+    <!-- Header-Part Start  -->
     <header id="headerpart" class="bg-white">
       <div class="container">
-        <nav class="navbar navbar-expand-lg align-items-center">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logo.png" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
+        <div class="">
+          <nav class="navbar navbar-expand-lg align-items-center">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo.png" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="icons">
+                <a href="user.html"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <span role="button" id="btn"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></span>
+              </div>
             </div>
-            <div class="icons">
-              <a href="user.html"><i class="fa-regular fa-user"></i></a>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href="#"><i class="fa-regular fa-heart"></i></a>
-              <a href="cart_sidebar.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </nav>
+
+          <div id="cart-sidebar" class="cart_sidebar">
+            <div
+              class="heading d-flex align-items-center justify-content-between"
+            >
+              <h3>Shopping Cart</h3>
+              <span id="btnC" role="button"
+                ><i class="fa-solid fa-xmark poin"></i
+              ></span>
+            </div>
+            <hr class="w-75 my-4" />
+            <div id="cart-product-part" class="product_part">
+     
+            </div>
+            <div class="total" >
+              <label>Subtotal</label>
+              <span id="subtotal"></span>
+            </div>
+            <hr class="w-100 my-4" />
+            <div
+              class="button w-100 d-flex align-items-center justify-content-between pt-2"
+            >
+              <a href="#">Cart</a>
+              <a href="#">Checkout</a>
+              <a href="#">Comparison</a>
+            </div>
+            <div
+              role="button"
+              class="full-page d-flex align-items-center column-gap-2 mt-4 p-2"
+            >
+              <a href="cart.html">
+                <i class="fa-solid fa-share"></i>
+                <span>View Full Page</span>
+              </a>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
     <!-- Banner-Part Start  -->
-        <section id="bannerPartCommon" class="">
-      <div class="bannerCommon ">
+    <section id="bannerPartCommon" class="">
+      <div class="bannerCommon">
         <div class="container text-center">
           <img src="img/bannerall_Logo.png" alt="Logo" />
           <h2>Shop</h2>
@@ -79,362 +119,361 @@
       </div>
     </section>
 
-
-        <!-- Products-Part Start  -->
+    <!-- Products-Part Start  -->
     <section id="" class="">
-        <div class="product_filter">
-<div class="container">
-<div class="d-flex align-items-center justify-content-between">
-              <div class=" d-flex align-items-center column-gap-4">
-            <span class="d-flex align-items-center column-gap-2"><i class="fa-solid fa-sliders"></i> Filter</span>
-            <span><i class="fa-solid fa-grip"></i></span>
-            <span><i class="fa-solid fa-list"></i></span>
-            <div class="line"></div>
-            <span class="showtext">Showing 1-16 of 32 results</span>
-
-            
-          </div>
-          <div class=" d-flex align-items-center column-gap-4">
-<div class="d-flex align-items-center column-gap-2">
-              <span>Show</span>
-            <select name="show" id="show" class="show">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-              <option value="">6</option>
-              <option value="">7</option>
-            </select>
-</div>
-            <div class="d-flex align-items-center column-gap-2">
-              <span>Sort by</span>
-              <select name="sortby" id="sortby" class="sortby">
-                <option value="">Default sorting</option>
-                <option value="">Sort by popularity</option>
-                <option value="">Sort by average rating</option>
-                <option value="">Sort by latest</option>
-                <option value="">Sort by price: low to high</option>
-                <option value="">Sort by price: high to low</option>
-              </select>
+      <div class="product_filter">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center column-gap-4">
+              <span class="d-flex align-items-center column-gap-2"
+                ><i class="fa-solid fa-sliders"></i> Filter</span
+              >
+              <span><i class="fa-solid fa-grip"></i></span>
+              <span><i class="fa-solid fa-list"></i></span>
+              <div class="line"></div>
+              <span class="showtext">Showing 1-16 of 32 results</span>
             </div>
-            
+            <div class="d-flex align-items-center column-gap-4">
+              <div class="d-flex align-items-center column-gap-2">
+                <span>Show</span>
+                <select name="show" id="show" class="show">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                </select>
+              </div>
+              <div class="d-flex align-items-center column-gap-2">
+                <span>Sort by</span>
+                <select name="sortby" id="sortby" class="sortby">
+                  <option value="">Default sorting</option>
+                  <option value="">Sort by popularity</option>
+                  <option value="">Sort by average rating</option>
+                  <option value="">Sort by latest</option>
+                  <option value="">Sort by price: low to high</option>
+                  <option value="">Sort by price: high to low</option>
+                </select>
+              </div>
+            </div>
           </div>
-</div>
-</div>
         </div>
-<div class="container">
-            <div class="row pt-5 mt-3">
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/Images (1).png"
-                    alt="Images (1).png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge">
-                    <p>-30%</p>
-                  </div>
-                </div>
-                <div class="text">
-                  <h3>Syltherine</h3>
-                  <p>Stylish cafe chair</p>
-
-                  <h4>Rp 2.500.000 <del>Rp 3.500.000</del></h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
+      </div>
+      <div class="container">
+        <div class="row pt-5 mt-3">
+          <div class="col-lg-3" id="product" data-id="1" data-name="syltherine" data-price="2.500.000" data-image="img/Images (1).png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (1).png"
+                  alt="Images (1).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-30%</p>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/image 2.png"
-                    alt="image 2.png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge">
-                    <p>-30%</p>
-                  </div>
-                </div>
+              <div class="text">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
 
-                <div class="text">
-                  <h3>Leviosa</h3>
-                  <p>Stylish cafe chair</p>
-
-                  <h4>
-                    Rp 2.500.000 <del class="visually-hidden">Rp 3.500.000</del>
-                  </h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                      <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
-                </div>
+                <h4>Rp 2.500.000 <del>Rp 3.500.000</del></h4>
               </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/images(3).png"
-                    alt="images(3).png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge">
-                    <p>-50%</p>
-                  </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
                 </div>
-
-                <div class="text">
-                  <h3>Lolito</h3>
-                  <p>Luxury big sofar</p>
-
-                  <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
                 </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/Images (4).png"
-                    alt="Images (4).png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge green">
-                    <p>New</p>
-                  </div>
-                </div>
-
-                <div class="text">
-                  <h3>Respira</h3>
-                  <p>Outdoor bar table and stool</p>
-
-                  <h4>
-                    Rp 500.000<del class="visually-hidden">Rp 14.000.000</del>
-                  </h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/Images (5).png"
-                    alt="Images (5).png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge">
-                    <p>-30%</p>
-                  </div>
-                </div>
-
-                <div class="text">
-                  <h3>Grifo</h3>
-                  <p>Night lamp</p>
-
-                  <h4>
-                    Rp 1.500.000<del class="visually-hidden">Rp 3.500.000</del>
-                  </h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/image 6.png"
-                    alt="image 6.png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge green">
-                    <p>New</p>
-                  </div>
-                </div>
-
-                <div class="text">
-                  <h3>Muggo</h3>
-                  <p>Small mug</p>
-
-                  <h4>Rp 150.000 <del>Rp 3.500.000</del></h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/Images (7).png"
-                    alt="Images (7).png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge">
-                    <p>-50%</p>
-                  </div>
-                </div>
-
-                <div class="text">
-                  <h3>Pingky</h3>
-                  <p>Cute bed set</p>
-
-                  <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3" id="product">
-              <div class="content">
-                <div class="pic">
-                  <img
-                    src="img/Images (8).png"
-                    alt="Images (8).png"
-                    class="w-100 img-fluid"
-                  />
-                  <div class="badge green">
-                    <p>New</p>
-                  </div>
-                </div>
-
-                <div class="text">
-                  <h3>Potty</h3>
-                  <p>Minimalist flower pot</p>
-
-                  <h4>
-                    Rp 500.000 <del class="visually-hidden">Rp 14.000.000</del>
-                  </h4>
-                </div>
-                <div class="overly">
-                  <div class="cart">
-                    <a href="#">Add to cart</a>
-                  </div>
-                  <div class="icons">
-                    <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="product_comparison.html"
-                      ><i class="fa-solid fa-code-compare"></i>Compare</a
-                    >
-                    <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
-                  </div>
-                                    <div class="view_details">
-                    <a href="single_product.html">View Details</a>
-                  </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
                 </div>
               </div>
             </div>
           </div>
-                    <div class="col-lg-4 m-auto pt-4">
-            <div class="pagination d-flex align-items-center justify-content-center column-gap-3">
-              <a href="">1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">Next</a>
+          <div class="col-lg-3" id="product" data-id="2" data-name="leviosa" data-price="2.500.000" data-image="img/image 2.png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/image 2.png"
+                  alt="image 2.png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-30%</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+
+                <h4>
+                  Rp 2.500.000 <del class="visually-hidden">Rp 3.500.000</del>
+                </h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
             </div>
           </div>
-</div>
+          <div class="col-lg-3" id="product" data-id="3" data-name="lolito" data-price="7.000.000" data-image="img/images(3).png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/images(3).png"
+                  alt="images(3).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-50%</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Lolito</h3>
+                <p>Luxury big sofar</p>
+
+                <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" id="product" data-id="4" data-name="respira" data-price="500.000" data-image="img/Images (4).png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (4).png"
+                  alt="Images (4).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge green">
+                  <p>New</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Respira</h3>
+                <p>Outdoor bar table and stool</p>
+
+                <h4>
+                  Rp 500.000<del class="visually-hidden">Rp 14.000.000</del>
+                </h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" id="product" data-id="5" data-name="grifo" data-price="1.500.000" data-image="img/Images (5).png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (5).png"
+                  alt="Images (5).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-30%</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+
+                <h4>
+                  Rp 1.500.000<del class="visually-hidden">Rp 3.500.000</del>
+                </h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" id="product" data-id="6" data-name="muggo" data-price="150.000" data-image="img/image 6.png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/image 6.png"
+                  alt="image 6.png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge green">
+                  <p>New</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+
+                <h4>Rp 150.000 <del>Rp 3.500.000</del></h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" id="product" data-id="7" data-name="respira" data-price="500.000" data-image="img/Images (7).png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (7).png"
+                  alt="Images (7).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-50%</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Pingky</h3>
+                <p>Cute bed set</p>
+
+                <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" id="product" data-id="8" data-name="respira" data-price="500.000" data-image="img/Images (8).png">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (8).png"
+                  alt="Images (8).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge green">
+                  <p>New</p>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Potty</h3>
+                <p>Minimalist flower pot</p>
+
+                <h4>
+                  Rp 500.000 <del class="visually-hidden">Rp 14.000.000</del>
+                </h4>
+              </div>
+              <div class="overly">
+                <div class="cart">
+                  <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 m-auto pt-4">
+          <div
+            class="pagination d-flex align-items-center justify-content-center column-gap-3"
+          >
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">Next</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-      <!-- Facilities Part Start  -->
-        <section class="feature-bar-section mt-5 pt-5">
+    <!-- Facilities Part Start  -->
+    <section class="feature-bar-section mt-5 pt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -467,9 +506,9 @@
             <div><img src="img/svg icon/shipping.svg" alt="" /></div>
             <div>
               <h6 class="fw-bold m-0 feature-title">Free Shipping</h6>
-            <p class="fw-normal text-muted feature-subtitle">
-              Order over 150 $
-            </p>
+              <p class="fw-normal text-muted feature-subtitle">
+                Order over 150 $
+              </p>
             </div>
           </div>
 
@@ -488,7 +527,7 @@
       </div>
     </section>
 
-        <!-- Footer-Part Start  -->
+    <!-- Footer-Part Start  -->
     <footer id="footerPart">
       <div class="container">
         <div class="footer">
@@ -549,9 +588,9 @@
       </div>
     </footer>
 
-        <!-- Js link Start  -->
+    <!-- Js link Start  -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
