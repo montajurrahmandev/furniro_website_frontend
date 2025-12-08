@@ -1,0 +1,32 @@
+              <!-- <div>
+                <ul>
+                  <li>
+                    <img
+                      src="img/Group 146.png"
+                      alt="Group 146.png"
+                      class="img-fluid"
+                    />
+                  </li>
+                  <li>Asgaard sofa</li>
+                  <li>Rs. 250,000.00</li>
+                  <li>
+                    <input type="number" value="1" min="1" class="quantity" />
+                  </li>
+                  <li class="price">Rs. 250,000.00</li>
+                  <li class="delete"><i class="fa-solid fa-trash"></i></li>
+                </ul>
+              </div>           -->
+
+              const deleteButtons = document.querySelectorAll('.delete');
+deleteButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const itemId = this.getAttribute('data-id');
+    removeItemFromCart(itemId); // You'd need to implement this function
+    renderCart(); // Re-render the cart after deletion
+  });
+});
+
+  // const subtotal = document.getElementById("subtotal");
+
+      subtotal.innerText = `Rs. ${grandTotal.toLocaleString()}`;
+            grandTotal += item.price * item.quantity;

@@ -1,5 +1,116 @@
-  @media (max-width: 768px) {
-    .comparison-table {
+
+  /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+  header .navbar-nav {
+    margin: 15px 0 !important;
+    
+  }
+  
+  header .navbar-nav .nav-item {
+    padding: 5px 0;
+  }
+  
+  header .navbar-nav .nav-link {
+    padding: 10px 0 !important;
+  }
+  
+  header .navbar-nav .nav-link::after {
+    display: none; /* Hide the underline effect on mobile for cleaner look */
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-between; /* Center icons below the menu on mobile */
+    padding-bottom: 10px;
+  }
+  .cart_sidebar {
+        width: 90%; /* Take up most of the screen width */
+    }
+
+    /* BANNER PART */
+
+    .bannerCard {
+  background: #fff3e3;
+  padding: 15px;
+  width: 70%;
+  margin: 0 auto;
+}
+.bannerCard h4 {
+  font-size: 14px;
+}
+.bannerCard h1 {
+  font-size: 28px;
+  line-height: 40px;
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.bannerCard p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.bannerCard a {
+  font-size: 14px;
+  padding: 15px 30px;
+  background: #b88e2f;
+  margin-top: 50px;
+}
+
+    /* BROWSE PART */
+    .heading h3 {
+        font-size: 24px;
+    }
+
+    /* ProductPart */
+    #product .content .overly{
+      display: none;
+    }
+
+    /* FOOTER PART - Newsletter adjustment */
+    #footerPart .menu input[type="email"],
+    #footerPart .menu input[type="submit"] {
+        display: block; /* Stack inputs */
+        width: 100%; /* Full width for stacking */
+        margin-bottom: 10px; /* Space between stacked inputs */
+    }
+    #footerPart .menu input[type="email"] {
+        width: 100%; /* Override the previous calculation */
+    }
+
+    /* Ensure product text and prices fit nicely */
+    #productsPart .text h4 {
+        font-size: 16px;
+    }
+    #productsPart .text del {
+        font-size: 12px;
+    }
+
+    /* Center align the cart sidebar buttons when space is tight */
+    .cart_sidebar .button {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cart_sidebar .button a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .cart-sidebar {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cart-sidebar {
+    width: 60%;
+  }
+      .comparison-table {
       grid-template-columns: 1fr;
     }
 
@@ -10,4 +121,22 @@
     .comparison-cell:nth-child(3n+1) {
       background: #f7f7f7;
     }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cart-sidebar {
+    width: 400px; /* fixed width on larger screens */
   }
+      .comparison-table {
+      grid-template-columns: 1fr;
+    }
+
+    .section-title {
+      grid-column: span 1;
+    }
+
+    .comparison-cell:nth-child(3n+1) {
+      background: #f7f7f7;
+    }
+}

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!-- Header-Part Start  -->
@@ -54,14 +55,17 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
-              </div>
-              <div class="icons">
-                <a href="user.html"><i class="fa-regular fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-regular fa-heart"></i></a>
-                <span role="button" id="btn"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></span>
+                <div class="icons">
+                  <a href="user.html"><i class="fa-regular fa-user"></i></a>
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <span role="button" id="btn" class="d-none d-md-inline-flex"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></span>
+                  <a href="cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </nav>
@@ -178,7 +182,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-gap-5">
           <div class="col-lg-4 text-center content">
             <img
               src="img/Mask Group.png"
@@ -230,6 +234,17 @@
                   <div class="badge">
                     <p>-30%</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
                 <div class="text">
                   <h3>Syltherine</h3>
@@ -237,7 +252,7 @@
 
                   <h4>Rp 2.500.000 <del>Rp 3.500.000</del></h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -265,6 +280,17 @@
                   <div class="badge">
                     <p>-30%</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -275,7 +301,7 @@
                     Rp 2.500.000 <del class="visually-hidden">Rp 3.500.000</del>
                   </h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -303,6 +329,17 @@
                   <div class="badge">
                     <p>-50%</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -311,7 +348,7 @@
 
                   <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -339,6 +376,17 @@
                   <div class="badge green">
                     <p>New</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -349,7 +397,7 @@
                     Rp 500.000<del class="visually-hidden">Rp 14.000.000</del>
                   </h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -377,6 +425,17 @@
                   <div class="badge">
                     <p>-30%</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -387,7 +446,7 @@
                     Rp 1.500.000<del class="visually-hidden">Rp 3.500.000</del>
                   </h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -415,6 +474,17 @@
                   <div class="badge green">
                     <p>New</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -423,7 +493,7 @@
 
                   <h4>Rp 150.000 <del>Rp 3.500.000</del></h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -451,6 +521,17 @@
                   <div class="badge">
                     <p>-50%</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -459,7 +540,7 @@
 
                   <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -487,6 +568,17 @@
                   <div class="badge green">
                     <p>New</p>
                   </div>
+                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
                 </div>
 
                 <div class="text">
@@ -497,7 +589,7 @@
                     Rp 500.000 <del class="visually-hidden">Rp 14.000.000</del>
                   </h4>
                 </div>
-                <div class="overly">
+                <div id="overly" class="overly">
                   <div class="cart">
                     <a href="#">Add to cart</a>
                   </div>
@@ -530,7 +622,7 @@
     <footer id="footerPart">
       <div class="container">
         <div class="footer">
-          <div class="row">
+          <div class="row row-gap-5">
             <div class="col-lg-4">
               <div class="address">
                 <h3>Funiro.</h3>
@@ -540,7 +632,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col col-lg-2">
               <div class="menu">
                 <h4>Links</h4>
                 <ul>
@@ -551,7 +643,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col col-lg-2">
               <div class="menu">
                 <h4>Help</h4>
                 <ul>

@@ -7,6 +7,17 @@
   font-size: 16px;
   color: #000000;
 }
+.cart_sidebar {
+    /* Previous styles... */
+    right: -400px; /* Start hidden */
+    transition: all 0.3s ease;
+}
+
+/* This is crucial */
+.cart_sidebar.active {
+    right: 0 !important; /* Force it to show */
+    display: block !important;
+}
 i {
   font-size: 20px;
 }
@@ -246,7 +257,7 @@ p {
 #headerpart {
   background: #ffffff;
 }
-.nav-link {
+header .navbar-nav .nav-link{
   font-size: 16px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
@@ -407,10 +418,10 @@ p {
   color: #333333;
 }
 #BrowsePart .heading p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-
+line-height: 24px;
   color: #666666;
   padding-top: 10px;
   padding-bottom: 65px;
