@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+       <link rel="stylesheet" href="css/media.css" />
     <!-- CSS links End -->
   </head>
   <body>
@@ -54,14 +55,17 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
-              </div>
-              <div class="icons">
-                <a href="cart.html"><i class="fa-regular fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-regular fa-heart"></i></a>
-                <span role="button" id="btn"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></span>
+                <div class="icons">
+                  <a href="user.html"><i class="fa-regular fa-user"></i></a>
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <span role="button" id="btn" class="d-none d-md-inline-flex"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></span>
+                  <a href="cart.html" class="d-md-none"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </nav>
@@ -76,12 +80,55 @@
               ></span>
             </div>
             <hr class="w-75 my-4" />
-            <div id="cart-sidebar-product" class="product_part">
-     
+            <div class="product_part">
+              <div
+                class="product d-flex align-items-center justify-content-between py-2"
+              >
+                <div class="img">
+                  <img
+                    src="img/Group 146.png"
+                    alt="Group 146.png"
+                    class="w-100 img-fluid"
+                  />
+                </div>
+                <div class="details">
+                  <h3 class="title">Asgaard sofa</h3>
+                  <div class="d-flex align-items-center column-gap-3 pt-2">
+                    <span class="quantity">1</span>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span class="price">Rs. 250,000.00</span>
+                  </div>
+                </div>
+                <div class="cross">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div
+                class="product d-flex align-items-center justify-content-between py-2"
+              >
+                <div class="img">
+                  <img
+                    src="img/Group 146 (1).png"
+                    alt="Group 146.png"
+                    class="w-100 img-fluid"
+                  />
+                </div>
+                <div class="details">
+                  <h3 class="title">Asgaard sofa</h3>
+                  <div class="d-flex align-items-center column-gap-3 pt-2">
+                    <span class="quantity">1</span>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span class="price">Rs. 250,000.00</span>
+                  </div>
+                </div>
+                <div class="cross">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+              </div>
             </div>
-            <div class="total" >
+            <div class="total">
               <label>Subtotal</label>
-              <span id="subtotal"></span>
+              <span>Rs. 520,000.00</span>
             </div>
             <hr class="w-100 my-4" />
             <div
@@ -123,7 +170,7 @@
     <section id="" class="">
       <div class="product_filter">
         <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-between row-gap-4">
             <div class="d-flex align-items-center column-gap-4">
               <span class="d-flex align-items-center column-gap-2"
                 ><i class="fa-solid fa-sliders"></i> Filter</span
@@ -174,6 +221,17 @@
                 <div class="badge">
                   <p>-30%</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
               <div class="text">
                 <h3>Syltherine</h3>
@@ -181,7 +239,7 @@
 
                 <h4>Rp 2.500.000 <del>Rp 3.500.000</del></h4>
               </div>
-              <div class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -209,6 +267,17 @@
                 <div class="badge">
                   <p>-30%</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -219,7 +288,7 @@
                   Rp 2.500.000 <del class="visually-hidden">Rp 3.500.000</del>
                 </h4>
               </div>
-              <div class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -247,6 +316,17 @@
                 <div class="badge">
                   <p>-50%</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -255,7 +335,7 @@
 
                 <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
               </div>
-              <div class="overly">
+               <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -283,6 +363,17 @@
                 <div class="badge green">
                   <p>New</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -293,7 +384,7 @@
                   Rp 500.000<del class="visually-hidden">Rp 14.000.000</del>
                 </h4>
               </div>
-              <div class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -321,6 +412,17 @@
                 <div class="badge">
                   <p>-30%</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -331,7 +433,7 @@
                   Rp 1.500.000<del class="visually-hidden">Rp 3.500.000</del>
                 </h4>
               </div>
-              <div class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -359,6 +461,17 @@
                 <div class="badge green">
                   <p>New</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -367,7 +480,7 @@
 
                 <h4>Rp 150.000 <del>Rp 3.500.000</del></h4>
               </div>
-              <div class="overly">
+               <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -395,6 +508,17 @@
                 <div class="badge">
                   <p>-50%</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -403,7 +527,7 @@
 
                 <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
               </div>
-              <div class="overly">
+               <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -431,6 +555,17 @@
                 <div class="badge green">
                   <p>New</p>
                 </div>
+                                  <div
+                    class="position-absolute d-md-none"
+                    style="bottom: 5%; left: 5%"
+                  >
+                    <button
+                      id="optionsBtn"
+                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                    >
+                      Options
+                    </button>
+                  </div>
               </div>
 
               <div class="text">
@@ -441,7 +576,7 @@
                   Rp 500.000 <del class="visually-hidden">Rp 14.000.000</del>
                 </h4>
               </div>
-              <div class="overly">
+               <div id="overly" class="overly">
                 <div class="cart">
                   <button class="add-to-cart-btn">Add to cart</button>
                 </div>
@@ -531,28 +666,29 @@
     <footer id="footerPart">
       <div class="container">
         <div class="footer">
-          <div class="row">
+          <div class="row row-gap-5">
             <div class="col-lg-4">
               <div class="address">
                 <h3>Funiro.</h3>
+                <p>01.........</p>
+                <p>company@domain.com</p>
                 <p>
-                  400 University Drive Suite 200 Coral Gables,<br />
-                  FL 33134 USA
+                  house, street, city, country 
                 </p>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col col-lg-2">
               <div class="menu">
                 <h4>Links</h4>
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Shop</a></li>
+                  <li><a href="shop.html">Shop</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html" class="pb-0">Contact</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col col-lg-2">
               <div class="menu">
                 <h4>Help</h4>
                 <ul>
