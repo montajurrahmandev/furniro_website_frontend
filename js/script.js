@@ -129,7 +129,7 @@ else{
 //       cartProduct.innerHTML += `
 //       <div>
 //         <ul>
-//           <li>
+//           <li class="d-none d-md-block">
 //             <img 
 //               src="${item.image}" 
 //               alt="${item.name}" 

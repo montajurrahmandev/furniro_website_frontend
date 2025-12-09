@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Note: Adjusted structure to match standard table or flex list
         cartProduct.innerHTML += `
            <ul class="d-flex align-items-center justify-content-between list-unstyled border-bottom py-3">
-              <li style="width: 15%"><img src="${item.image}" class="img-fluid" style="width: 70px; border-radius: 5px;"></li>
+              <li style="width: 15%" class="d-none d-md-block"><img src="${item.image}" class="img-fluid" style="width: 70px; border-radius: 5px;"></li>
               <li style="width: 20%">${item.name}</li>
               <li style="width: 15%">Rs. ${item.price.toLocaleString('id-ID')}</li>
               <li style="width: 15%"><span class="border px-3 py-1">${item.quantity}</span></li>

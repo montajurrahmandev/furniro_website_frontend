@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Cart Page
         cartPageHTML += `
         <div class="d-flex align-items-center justify-content-between py-3 border-bottom text-center">
-            <div style="width: 15%"><img src="${item.image}" class="img-fluid" style="max-width: 80px;"></div>
+            <div style="width: 15%" class="d-none d-md-block"><img src="${item.image}" class="img-fluid" style="max-width: 80px;"></div>
             <div style="width: 20%">${item.name}</div>
             <div style="width: 20%">Rs. ${displayPrice}</div>
             <div style="width: 15%"><span class="border px-3 py-1">${item.quantity}</span></div>
