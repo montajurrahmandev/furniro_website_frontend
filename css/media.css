@@ -116,6 +116,13 @@
   width: 70%;
   padding: 5px;
 }
+
+/* Cart Page  */
+.cart-part .cart-content,.cart-part .cart-card{
+  width: 100%;
+}
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
