@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-       <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <!-- CSS links End -->
   </head>
   <body>
@@ -80,62 +80,23 @@
               ></span>
             </div>
             <hr class="w-75 my-4" />
-            <div class="product_part">
-              <div
-                class="product d-flex align-items-center justify-content-between py-2"
-              >
-                <div class="img">
-                  <img
-                    src="img/Group 146.png"
-                    alt="Group 146.png"
-                    class="w-100 img-fluid"
-                  />
-                </div>
-                <div class="details">
-                  <h3 class="title">Asgaard sofa</h3>
-                  <div class="d-flex align-items-center column-gap-3 pt-2">
-                    <span class="quantity">1</span>
-                    <i class="fa-solid fa-xmark"></i>
-                    <span class="price">Rs. 250,000.00</span>
-                  </div>
-                </div>
-                <div class="cross">
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
+            <div class="product_part cart-sidebar-product" id="cart-sidebar-product"></div>
+            <div class="totalPrice">
+              <div class="">
+                <label>Subtotal</label>
+                <p class="cart-subtotal" id="cart-subtotal"></p>
               </div>
-              <div
-                class="product d-flex align-items-center justify-content-between py-2"
-              >
-                <div class="img">
-                  <img
-                    src="img/Group 146 (1).png"
-                    alt="Group 146.png"
-                    class="w-100 img-fluid"
-                  />
-                </div>
-                <div class="details">
-                  <h3 class="title">Asgaard sofa</h3>
-                  <div class="d-flex align-items-center column-gap-3 pt-2">
-                    <span class="quantity">1</span>
-                    <i class="fa-solid fa-xmark"></i>
-                    <span class="price">Rs. 250,000.00</span>
-                  </div>
-                </div>
-                <div class="cross">
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
+              <div class="">
+                <label>Total</label>
+                <p class="cart-total" id="cart-total"></p>
               </div>
-            </div>
-            <div class="total">
-              <label>Subtotal</label>
-              <span>Rs. 520,000.00</span>
             </div>
             <hr class="w-100 my-4" />
             <div
               class="button w-100 d-flex align-items-center justify-content-between pt-2"
             >
               <a href="#">Cart</a>
-              <a href="#">Checkout</a>
+              <a href="#" class="checkout-btn">Checkout</a>
               <a href="#">Comparison</a>
             </div>
             <div
@@ -170,7 +131,9 @@
     <section id="" class="">
       <div class="product_filter">
         <div class="container">
-          <div class="d-flex flex-column flex-md-row align-items-center justify-content-between row-gap-4">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between row-gap-4"
+          >
             <div class="d-flex align-items-center column-gap-4">
               <span class="d-flex align-items-center column-gap-2"
                 ><i class="fa-solid fa-sliders"></i> Filter</span
@@ -184,7 +147,7 @@
               <div class="d-flex align-items-center column-gap-2">
                 <span>Show</span>
                 <select name="show" id="show" class="show">
-                  <option value="">1</option>
+                  <option value="">16</option>
                   <option value="">2</option>
                   <option value="">3</option>
                   <option value="">4</option>
@@ -210,7 +173,7 @@
       </div>
       <div class="container">
         <div class="row pt-5 mt-3">
-          <div class="col-lg-3" id="product" data-id="1" data-name="syltherine" data-price="2.500.000" data-image="img/Images (1).png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -221,17 +184,17 @@
                 <div class="badge">
                   <p>-30%</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
               <div class="text">
                 <h3>Syltherine</h3>
@@ -241,7 +204,15 @@
               </div>
               <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="1"
+                    data-name="syltherine"
+                    data-price="2.500.000"
+                    data-image="img/Images (1).png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -256,7 +227,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="2" data-name="leviosa" data-price="2.500.000" data-image="img/image 2.png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -267,17 +238,17 @@
                 <div class="badge">
                   <p>-30%</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -290,7 +261,15 @@
               </div>
               <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="2"
+                    data-name="leviosa"
+                    data-price="2.500.000"
+                    data-image="img/image 2.png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -305,7 +284,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="3" data-name="lolito" data-price="7.000.000" data-image="img/images(3).png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -316,17 +295,17 @@
                 <div class="badge">
                   <p>-50%</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -335,9 +314,17 @@
 
                 <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
               </div>
-               <div id="overly" class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="3"
+                    data-name="lolito"
+                    data-price="7.000.000"
+                    data-image="img/images(3).png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -352,7 +339,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="4" data-name="respira" data-price="500.000" data-image="img/Images (4).png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -363,17 +350,17 @@
                 <div class="badge green">
                   <p>New</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -386,7 +373,15 @@
               </div>
               <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="4"
+                    data-name="respira"
+                    data-price="500.000"
+                    data-image="img/Images (4).png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -401,7 +396,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="5" data-name="grifo" data-price="1.500.000" data-image="img/Images (5).png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -412,17 +407,17 @@
                 <div class="badge">
                   <p>-30%</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -435,7 +430,15 @@
               </div>
               <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="5"
+                    data-name="grifo"
+                    data-price="1.500.000"
+                    data-image="img/Images (5).png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -450,7 +453,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="6" data-name="muggo" data-price="150.000" data-image="img/image 6.png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -461,17 +464,17 @@
                 <div class="badge green">
                   <p>New</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -480,9 +483,17 @@
 
                 <h4>Rp 150.000 <del>Rp 3.500.000</del></h4>
               </div>
-               <div id="overly" class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="6"
+                    data-name="muggo"
+                    data-price="150.000"
+                    data-image="img/image 6.png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -497,7 +508,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="7" data-name="Pingky" data-price="7.000.000" data-image="img/Images (7).png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -508,17 +519,17 @@
                 <div class="badge">
                   <p>-50%</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -527,9 +538,17 @@
 
                 <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
               </div>
-               <div id="overly" class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="7"
+                    data-name="Pingky"
+                    data-price="7.000.000"
+                    data-image="img/Images (7).png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -544,7 +563,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3" id="product" data-id="8" data-name="Potty" data-price="500.000" data-image="img/Images (8).png">
+          <div class="col-lg-3 product" id="product">
             <div class="content">
               <div class="pic">
                 <img
@@ -555,17 +574,17 @@
                 <div class="badge green">
                   <p>New</p>
                 </div>
-                                  <div
-                    class="position-absolute d-md-none"
-                    style="bottom: 5%; left: 5%"
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
                   >
-                    <button
-                      id="optionsBtn"
-                      class="border-0 bg-black px-4 py-2 text-white rounded-2"
-                    >
-                      Options
-                    </button>
-                  </div>
+                    Options
+                  </button>
+                </div>
               </div>
 
               <div class="text">
@@ -576,9 +595,464 @@
                   Rp 500.000 <del class="visually-hidden">Rp 14.000.000</del>
                 </h4>
               </div>
-               <div id="overly" class="overly">
+              <div id="overly" class="overly">
                 <div class="cart">
-                  <button class="add-to-cart-btn">Add to cart</button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="8"
+                    data-name="Potty"
+                    data-price="500.000"
+                    data-image="img/Images (8).png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (1).png"
+                  alt="Images (1).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-30%</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+              <div class="text">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+
+                <h4>Rp 2.500.000 <del>Rp 3.500.000</del></h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="1"
+                    data-name="syltherine"
+                    data-price="2.500.000"
+                    data-image="img/Images (1).png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/image 2.png"
+                  alt="image 2.png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-30%</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+
+                <h4>
+                  Rp 2.500.000 <del class="visually-hidden">Rp 3.500.000</del>
+                </h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="2"
+                    data-name="leviosa"
+                    data-price="2.500.000"
+                    data-image="img/image 2.png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/images(3).png"
+                  alt="images(3).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-50%</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Lolito</h3>
+                <p>Luxury big sofar</p>
+
+                <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="3"
+                    data-name="lolito"
+                    data-price="7.000.000"
+                    data-image="img/images(3).png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (4).png"
+                  alt="Images (4).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge green">
+                  <p>New</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Respira</h3>
+                <p>Outdoor bar table and stool</p>
+
+                <h4>
+                  Rp 500.000<del class="visually-hidden">Rp 14.000.000</del>
+                </h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="4"
+                    data-name="respira"
+                    data-price="500.000"
+                    data-image="img/Images (4).png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (5).png"
+                  alt="Images (5).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-30%</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+
+                <h4>
+                  Rp 1.500.000<del class="visually-hidden">Rp 3.500.000</del>
+                </h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="5"
+                    data-name="grifo"
+                    data-price="1.500.000"
+                    data-image="img/Images (5).png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/image 6.png"
+                  alt="image 6.png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge green">
+                  <p>New</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+
+                <h4>Rp 150.000 <del>Rp 3.500.000</del></h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="6"
+                    data-name="muggo"
+                    data-price="150.000"
+                    data-image="img/image 6.png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (7).png"
+                  alt="Images (7).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge">
+                  <p>-50%</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Pingky</h3>
+                <p>Cute bed set</p>
+
+                <h4>Rp 7.000.000 <del>Rp 14.000.000</del></h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="7"
+                    data-name="Pingky"
+                    data-price="7.000.000"
+                    data-image="img/Images (7).png"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                  <a href="product_comparison.html"
+                    ><i class="fa-solid fa-code-compare"></i>Compare</a
+                  >
+                  <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
+                </div>
+                <div class="view_details">
+                  <a href="single_product.html">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 product" id="product">
+            <div class="content">
+              <div class="pic">
+                <img
+                  src="img/Images (8).png"
+                  alt="Images (8).png"
+                  class="w-100 img-fluid"
+                />
+                <div class="badge green">
+                  <p>New</p>
+                </div>
+                <div
+                  class="position-absolute d-md-none"
+                  style="bottom: 5%; left: 5%"
+                >
+                  <button
+                    id="optionsBtn"
+                    class="border-0 bg-black px-4 py-2 text-white rounded-2"
+                  >
+                    Options
+                  </button>
+                </div>
+              </div>
+
+              <div class="text">
+                <h3>Potty</h3>
+                <p>Minimalist flower pot</p>
+
+                <h4>
+                  Rp 500.000 <del class="visually-hidden">Rp 14.000.000</del>
+                </h4>
+              </div>
+              <div id="overly" class="overly">
+                <div class="cart">
+                  <button
+                    class="add-to-cart-btn"
+                    data-id="8"
+                    data-name="Potty"
+                    data-price="500.000"
+                    data-image="img/Images (8).png"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div class="icons">
                   <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
@@ -672,9 +1146,7 @@
                 <h3>Funiro.</h3>
                 <p>01.........</p>
                 <p>company@domain.com</p>
-                <p>
-                  house, street, city, country 
-                </p>
+                <p>house, street, city, country</p>
               </div>
             </div>
             <div class="col col-lg-2">
@@ -728,6 +1200,5 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/script-2.js"></script>
   </body>
 </html>

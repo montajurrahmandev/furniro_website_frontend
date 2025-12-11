@@ -30,3 +30,29 @@ deleteButtons.forEach(button => {
 
       subtotal.innerText = `Rs. ${grandTotal.toLocaleString()}`;
             grandTotal += item.price * item.quantity;
+
+              // Cart Sidebar Rendering
+      cartSidebarProduct.innerHTML += `
+                      <div
+                class="product d-flex align-items-center justify-content-between py-2"
+              >
+                <div class="img">
+                  <img
+                    src="${item.image}"
+                    alt="product image"
+                    class="w-100 img-fluid"
+                  />
+                </div>
+                <div class="details">
+                  <h3 class="title">${item.name}</h3>
+                  <div class="d-flex align-items-center column-gap-3 pt-2">
+                    <span class="quantity">${item.quantity}</span>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span class="price">Rs. ${price.toLocaleString()}</span>
+                  </div>
+                </div>
+                <div class="cross">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+              </div>
+        `;

@@ -49,6 +49,13 @@ p {
   width: 2px;
   background: #9f9f9f;
 }
+.checkout-btn.disabled {
+  pointer-events: none;   /* disables clicking */
+  opacity: 0.5;           /* make it look disabled */
+  cursor: not-allowed;
+  color: gray !important;            /* optional: change text color */
+  text-decoration: none;  /* optional: remove underline */
+}
 .bannerCommon {
   padding: 95px 0;
   background: url("../img/bannerall.png");
@@ -316,17 +323,24 @@ header .navbar-nav .nav-link{
   font-size: 20px;
   color: #9f9f9f;
 }
-.cart_sidebar .total {
+.cart_sidebar .totalPrice {
   padding-top: 200px;
   display: flex;
   align-items: center;
   column-gap: 130px;
 }
-.cart_sidebar .total label {
+.cart_sidebar .totalPrice label {
   font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 10px;
 }
-.cart_sidebar .total span {
-  font-size: 16px;
+.cart_sidebar .totalPrice .cart-subtotal {
+  font-size:16px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.cart_sidebar .totalPrice .cart-total {
+  font-size: 20px;
   font-weight: 600;
   color: #b88e2f;
 }
@@ -1037,7 +1051,7 @@ line-height: 24px;
   font-weight: 400;
   color: #b88e2f;
 }
-.cart-part .cart-card button {
+.cart-part .cart-card a {
   font-size: 20px;
   color: #000000;
   padding: 15px 50px;
@@ -1065,35 +1079,35 @@ line-height: 24px;
 .cart-part .cart-content .menu ul .delete {
   width: 50px;
 }
-.cart-part .cart-content .product {
+.cart-part .cart-content .cart-product {
   padding-top: 30px;
 }
-.cart-part .cart-content .product ul {
+.cart-part .cart-content .cart-product ul {
   padding: 20px 0;
   border-bottom: 1px solid #e0e0e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.cart-part .cart-content .product ul li {
+.cart-part .cart-content .cart-product ul li {
   font-weight: 400;
   color: #9f9f9f;
   width: 120px;
   text-align: center;
 }
-.cart-part .cart-content .product ul input {
+.cart-part .cart-content .cart-product ul input {
   padding: 5px;
   width: 50px;
 }
-.cart-part .cart-content .product .price {
+.cart-part .cart-content .cart-product .price {
   font-weight: 400;
   color: #000000;
 }
-.cart-part .cart-content .product .delete {
+.cart-part .cart-content .cart-product .delete-btn {
   width: 50px;
   color: #b88e2f;
 }
-.cart-part .cart-content .product .delete i {
+.cart-part .cart-content .cart-product .delete-btn i {
   font-size: 20px;
   color: #b88e2f;
 }

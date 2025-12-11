@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-       <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!-- Header-Part Start  -->
@@ -80,62 +80,23 @@
               ></span>
             </div>
             <hr class="w-75 my-4" />
-            <div class="product_part">
-              <div
-                class="product d-flex align-items-center justify-content-between py-2"
-              >
-                <div class="img">
-                  <img
-                    src="img/Group 146.png"
-                    alt="Group 146.png"
-                    class="w-100 img-fluid"
-                  />
-                </div>
-                <div class="details">
-                  <h3 class="title">Asgaard sofa</h3>
-                  <div class="d-flex align-items-center column-gap-3 pt-2">
-                    <span class="quantity">1</span>
-                    <i class="fa-solid fa-xmark"></i>
-                    <span class="price">Rs. 250,000.00</span>
-                  </div>
-                </div>
-                <div class="cross">
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
+            <div class="product_part cart-sidebar-product" id="cart-sidebar-product"></div>
+            <div class="totalPrice">
+              <div class="">
+                <label>Subtotal</label>
+                <p class="cart-subtotal" id="cart-subtotal"></p>
               </div>
-              <div
-                class="product d-flex align-items-center justify-content-between py-2"
-              >
-                <div class="img">
-                  <img
-                    src="img/Group 146 (1).png"
-                    alt="Group 146.png"
-                    class="w-100 img-fluid"
-                  />
-                </div>
-                <div class="details">
-                  <h3 class="title">Asgaard sofa</h3>
-                  <div class="d-flex align-items-center column-gap-3 pt-2">
-                    <span class="quantity">1</span>
-                    <i class="fa-solid fa-xmark"></i>
-                    <span class="price">Rs. 250,000.00</span>
-                  </div>
-                </div>
-                <div class="cross">
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
+              <div class="">
+                <label>Total</label>
+                <p class="cart-total" id="cart-total"></p>
               </div>
-            </div>
-            <div class="total">
-              <label>Subtotal</label>
-              <span>Rs. 520,000.00</span>
             </div>
             <hr class="w-100 my-4" />
             <div
               class="button w-100 d-flex align-items-center justify-content-between pt-2"
             >
               <a href="#">Cart</a>
-              <a href="#">Checkout</a>
+              <a href="#" class="checkout-btn">Checkout</a>
               <a href="#">Comparison</a>
             </div>
             <div
@@ -169,7 +130,9 @@
     <!-- Cart-Part Start  -->
     <section>
       <div class="container">
-        <div class="cart-part d-flex flex-column flex-md-row justify-content-between column-gap-5 row-gap-5 pt-5 mt-3">
+        <div
+          class="cart-part d-flex flex-column flex-md-row justify-content-between column-gap-5 row-gap-5 pt-5 mt-3"
+        >
           <div class="cart-content">
             <div class="menu">
               <ul>
@@ -181,32 +144,32 @@
                 <li class="delete"></li>
               </ul>
             </div>
-            <div class="product" id="cart-product">
-
-            </div>
+            <div class="cart-product" id="cart-product"></div>
           </div>
-          <div class="cart-card  text-center">
+          <div class="cart-card text-center">
             <h4>Cart Totals</h4>
             <p
               class="d-flex align-items-center column-gap-5 justify-content-center pt-5 mt-5"
             >
-              Subtotal <span class="subtotal">Rs. 250,000.00</span>
+              Subtotal
+              <span class="subtotal cart-subtotal" id="cart-subtotal"></span>
             </p>
 
             <p
               class="d-flex align-items-center column-gap-5 justify-content-center pt-4"
             >
-              Total <span class="total">Rs. 250,000.00</span>
+              Total <span class="total cart-total" id="cart-total"></span>
             </p>
 
-            <a href="checkout.html"><button class="">Check Out</button></a>
+            <a href="checkout.html" class="checkout-btn">Check Out</a>
           </div>
         </div>
       </div>
     </section>
 
+
     <!-- Facilities Part Start  -->
-    <section class="feature-bar-section ">
+    <section class="feature-bar-section">
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -272,9 +235,7 @@
                 <h3>Funiro.</h3>
                 <p>01.........</p>
                 <p>company@domain.com</p>
-                <p>
-                  house, street, city, country 
-                </p>
+                <p>house, street, city, country</p>
               </div>
             </div>
             <div class="col col-lg-2">
@@ -328,6 +289,6 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/script-2.js"></script>
+
   </body>
 </html>

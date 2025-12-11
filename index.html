@@ -80,62 +80,23 @@
               ></span>
             </div>
             <hr class="w-75 my-4" />
-            <div class="product_part">
-              <div
-                class="product d-flex align-items-center justify-content-between py-2"
-              >
-                <div class="img">
-                  <img
-                    src="img/Group 146.png"
-                    alt="Group 146.png"
-                    class="w-100 img-fluid"
-                  />
-                </div>
-                <div class="details">
-                  <h3 class="title">Asgaard sofa</h3>
-                  <div class="d-flex align-items-center column-gap-3 pt-2">
-                    <span class="quantity">1</span>
-                    <i class="fa-solid fa-xmark"></i>
-                    <span class="price">Rs. 250,000.00</span>
-                  </div>
-                </div>
-                <div class="cross">
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
+            <div class="product_part cart-sidebar-product" id="cart-sidebar-product"></div>
+            <div class="totalPrice">
+              <div class="">
+                <label>Subtotal</label>
+                <p class="cart-subtotal" id="cart-subtotal"></p>
               </div>
-              <div
-                class="product d-flex align-items-center justify-content-between py-2"
-              >
-                <div class="img">
-                  <img
-                    src="img/Group 146 (1).png"
-                    alt="Group 146.png"
-                    class="w-100 img-fluid"
-                  />
-                </div>
-                <div class="details">
-                  <h3 class="title">Asgaard sofa</h3>
-                  <div class="d-flex align-items-center column-gap-3 pt-2">
-                    <span class="quantity">1</span>
-                    <i class="fa-solid fa-xmark"></i>
-                    <span class="price">Rs. 250,000.00</span>
-                  </div>
-                </div>
-                <div class="cross">
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
+              <div class="">
+                <label>Total</label>
+                <p class="cart-total" id="cart-total"></p>
               </div>
-            </div>
-            <div class="total">
-              <label>Subtotal</label>
-              <span>Rs. 520,000.00</span>
             </div>
             <hr class="w-100 my-4" />
             <div
               class="button w-100 d-flex align-items-center justify-content-between pt-2"
             >
               <a href="#">Cart</a>
-              <a href="#">Checkout</a>
+              <a href="#" class="checkout-btn">Checkout</a>
               <a href="#">Comparison</a>
             </div>
             <div
@@ -151,7 +112,6 @@
         </div>
       </div>
     </header>
-
     <!-- Banner-Part Start  -->
     <section id="bannerpart">
       <div class="container">
@@ -223,7 +183,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -254,11 +214,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="1"
+                      data-name="syltherine"
+                      data-price="2.500.000"
+                      data-image="img/Images (1).png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -269,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -303,11 +271,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="2"
+                      data-name="leviosa"
+                      data-price="2.500.000"
+                      data-image="img/image 2.png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -318,7 +294,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -350,11 +326,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="3"
+                      data-name="lolito"
+                      data-price="7.000.000"
+                      data-image="img/images(3).png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -365,7 +349,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -399,11 +383,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="4"
+                      data-name="respira"
+                      data-price="500.000"
+                      data-image="img/Images (4).png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -414,7 +406,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -448,11 +440,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="5"
+                      data-name="grifo"
+                      data-price="1.500.000"
+                      data-image="img/Images (5).png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -463,7 +463,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -495,11 +495,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="6"
+                      data-name="muggo"
+                      data-price="150.000"
+                      data-image="img/image 6.png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -510,7 +518,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -542,11 +550,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="7"
+                      data-name="Pingky"
+                      data-price="7.000.000"
+                      data-image="img/Images (7).png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -557,7 +573,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" id="product">
+            <div class="col-lg-3 product" id="product">
               <div class="content">
                 <div class="pic">
                   <img
@@ -591,11 +607,19 @@
                 </div>
                 <div id="overly" class="overly">
                   <div class="cart">
-                    <a href="#">Add to cart</a>
+                    <button
+                      class="add-to-cart-btn"
+                      data-id="8"
+                      data-name="Potty"
+                      data-price="500.000"
+                      data-image="img/Images (8).png"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <div class="icons">
                     <a href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-                    <a href="#"
+                    <a href="product_comparison.html"
                       ><i class="fa-solid fa-code-compare"></i>Compare</a
                     >
                     <a href="#"><i class="fa-solid fa-heart"></i>Like</a>
@@ -628,9 +652,7 @@
                 <h3>Funiro.</h3>
                 <p>01.........</p>
                 <p>company@domain.com</p>
-                <p>
-                  house, street, city, country 
-                </p>
+                <p>house, street, city, country</p>
               </div>
             </div>
             <div class="col col-lg-2">
